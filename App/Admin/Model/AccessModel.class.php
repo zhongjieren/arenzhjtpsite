@@ -135,7 +135,7 @@ class AccessModel extends CommonModel {
         }
         $user_id = (int) $_POST['uid'];
         $role_id = (int) $_POST['role_id'];
-        $roleStatus = M("RoleUser")->where("`user_id`=$user_id")->save(array('role_id' => $role_id));
+        $roleStatus = M("<roleuser></roleuser>")->where("`user_id`=$user_id")->save(array('role_id' => $role_id));
         unset($_POST['role_id']);
         if ($M->save($_POST)) {
 //            , 'url' => U("Access/index")

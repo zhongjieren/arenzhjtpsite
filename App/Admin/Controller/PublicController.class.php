@@ -44,6 +44,7 @@ class PublicController extends Controller {
     public function index() {
 
         if (IS_POST) {
+        	//防止多次提交
             $this->checkToken();
             $returnLoginInfo = D("Public")->auth();
             //生成认证条件
