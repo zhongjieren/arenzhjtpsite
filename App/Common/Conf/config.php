@@ -3,12 +3,12 @@ $sysConfig = array(
     
     /* 数据库配置 */
     'DB_TYPE' => 'mysql', // 数据库类型
-		'DB_HOST' => 'localhost',
-		'DB_NAME' => 'cms_ewsd_cn',
-		'DB_USER' => 'root',
-		'DB_PWD' => 'root',
-		'DB_PORT' => '3306',
-		'DB_PREFIX' => 'ec_',
+	'DB_HOST' => 'localhost',
+	'DB_NAME' => 'cms_ewsd_cn',
+	'DB_USER' => 'root',
+	'DB_PWD' => 'root',
+	'DB_PORT' => '3306',
+	'DB_PREFIX' => 'ec_',
 
 	/* 系统配置信息 */
     'WEB_ROOT' => '/',
@@ -38,9 +38,9 @@ $sysConfig = array(
 
     /* 开发人员相关信息 */
     'AUTHOR_INFO' => array (
-				'author' => 'arenzhj',
-				'author_email' => 'arenzhj@163.com' 
-		),
+		'author' => 'arenzhj',
+		'author_email' => 'arenzhj@163.com' 
+	),
 
     /* 自定义配置信息 */
     'STATIC_PATH' => '/Static/',
