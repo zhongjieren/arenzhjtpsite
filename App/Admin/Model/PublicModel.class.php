@@ -19,17 +19,20 @@ class PublicModel {
 
     public function auth($datas) {
         $datas = $_POST;
+        //1、验证码验证
         $verify = new \Think\Verify();
         $isVerifyPass = $verify->check($_POST['verify_code'], '');
         if (!$isVerifyPass) {
             die(json_encode(array('statusCode' => 300, 'message' => "验证码错误啦，再输入吧")));
         }
+        
         $M = M("User");
         if ($M->where("`username`='" . $datas['username'] . "'")->count() >= 1) {
             $info = $M->where("`username`='" . $datas["username"] . "'")->find();
-            foreach ($infoList as $value) {
-                $info = $value;
-            }
+//             foreach ($infoList as $value) {
+//                 $info = $value;
+//             }
+
             if ($info['status'] == 0) {
                 return array('statusCode' => 300, 'message' => "你的账号被禁用，有疑问请与管理员联系");
             }
@@ -79,6 +82,7 @@ class PublicModel {
             return array('statusCode' => 300, 'message' => "两次密码不一致");
         }
         $data['aid'] = $_SESSION['aid'];
+        //User pwd = md5( AUTH_CODE. md5(pwd) )
         $data['pwd'] = md5(C("AUTH_CODE") . md5($datas['pwd']));
         $data['find_code'] = NULL;
         if ($M->save($data)) {

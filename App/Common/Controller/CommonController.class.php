@@ -24,7 +24,14 @@ class CommonController extends Controller {
      * 如果 继承本类的类自身也需要初始化那么需要在使用本继承类的类里使用parent::_initialize();
      */
     public function _initialize() {
-
+    	import('ORG.Util.RBAC');
+    	$RBAC = new \Org\Util\Rbac();
+    	//是否通过认证
+    	if(!$RBAC->AccessDecision()){
+    		//未通过认证
+    		$this->error("抱歉,您没有操作权限,请联系管理员!");
+    	}
+    	//loginMarked => md5(arenzhj@163.com)
         $this->loginMarked = md5(C('TOKEN.admin_marked'));
         $this->checkLogin();
         //$this->getQRCode();
