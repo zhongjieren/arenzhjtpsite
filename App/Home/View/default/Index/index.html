@@ -5,6 +5,15 @@
     <link href="{:C('STATIC_PATH')}Plugins/jquery/plugins/SuperSlide/style.css" rel="stylesheet">
     <script src="{:C('STATIC_PATH')}Plugins/jquery/plugins/SuperSlide/jquery.SuperSlide.2.1.js"></script>
     <title>{:C('siteName')}</title>
+    <link href="{:C('STATIC_PATH')}Plugins/bootstrap3/css/bootstrap.css" rel="stylesheet">
+    <link href="{:C('STATIC_PATH')}Plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{:C('STATIC_PATH')}Plugins/kindeditor/plugins/code/prettify.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="{:C('STATIC_PATH')}Plugins/bootstrap3/js/html5shiv.js"></script>
+    <![endif]-->
+
+
 </head>
 <body>
 <include file="Common:header" />
@@ -50,20 +59,28 @@
 
             <p></p>
 
-            <div class="row">
-                <volist name="topCate" id="vo">
-                    <div class="col-md-6">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading"><h4 class="panel-title"><i class="fa fa-fire"></i> <a href="/index-{$vo.fid}-{$vo.cid}.html">{$vo.name}</a></h4></div>
+            <ul id="myTab" class="nav nav-tabs">
+                <volist name="topCate" id="vo"  key='k'>
+                    <li <if condition="$k == 1">class="active"</if>  >
+                        <a href="#{$vo.cid}-cat"  data-toggle="tab"  >
+                            {$vo.name}
+                        </a>
+                    </li>
+                </volist>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+                <volist name="topCate" id="vo"  key='k'>
+                        <div <if condition="$k == 1">class="tab-pane fade in active" <else/> class="tab-pane fade"</if>  id="{$vo['cid']}-cat">
                             <div class="list-group">
-                                <volist name="vo.article" id="articleVo">
-                                    <a href="/article-{$articleVo.cid}-{$articleVo.id}.html" class="list-group-item">{$articleVo.title|cutStr="28"}</a>
+                                <volist name="vo.article" id="articleVo"  key='n'>
+                                    <a href="/article-{$articleVo.cid}-{$articleVo.id}.html" class="list-group-item"><span class="fa fa-th-list b-black"></span>  {$articleVo.title|cutStr="28"}</a>
                                 </volist>
                             </div>
                         </div>
-                    </div>
                 </volist>
             </div>
+
+            <p></p>
         </div>
 
         <div class="col-md-4 col-sm-12">
@@ -79,10 +96,19 @@
             </form>
 
             <div class="panel panel-red">
-                <div class="panel-heading"><h4 class="panel-title"><i class="fa fa-fire"></i> 热门文章</h4></div>
+                <div class="panel-heading"><h4 class="panel-title"><i class="fa fa-fire"></i>热门推荐</h4></div>
                 <div class="list-group">
                     <list model="Article" fields="id,cid,title" limit="15" order="click DESC">
-                        <a href="/article-{$cid}-{$id}.html" class="list-group-item">{$title}</a>
+                        <a href="/article-{$cid}-{$id}.html" class="list-group-item"><span class="fa fa-th-list b-black"></span> {$title}</a>
+                    </list>
+                </div>
+            </div>
+
+            <div class="panel panel-warning">
+                <div class="panel-heading"><h4 class="panel-title"><i class="fa fa-fire"></i>热门主题</h4></div>
+                <div class="list-group">
+                    <list model="Article" fields="id,cid,title" limit="15" order="click DESC">
+                        <a href="/article-{$cid}-{$id}.html" class="list-group-item"><span class="fa fa-flag b-black"></span> {$title}</a>
                     </list>
                 </div>
             </div>

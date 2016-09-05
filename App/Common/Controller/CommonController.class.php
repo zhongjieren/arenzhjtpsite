@@ -27,10 +27,10 @@ class CommonController extends Controller {
     	import('ORG.Util.RBAC');
     	$RBAC = new \Org\Util\Rbac();
     	//是否通过认证
-    	if(!$RBAC->AccessDecision()){
-    		//未通过认证
-    		$this->error("抱歉,您没有操作权限,请联系管理员!");
-    	}
+//    	if(!$RBAC->AccessDecision()){
+//    		//未通过认证
+//    		$this->error("抱歉,您没有操作权限,请联系管理员!");
+//    	}
     	//loginMarked => md5(arenzhj@163.com)
         $this->loginMarked = md5(C('TOKEN.admin_marked'));
         $this->checkLogin();

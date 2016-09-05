@@ -39,6 +39,20 @@ class IndexController extends CommonController {
       +----------------------------------------------------------
      */
     public function index() {
+        /** Demo Start*/
+        $articleHotTypes = array(
+            array('name'=>'日最热', 'id'=>'day-hot'),
+            array('name'=>'周最热', 'id'=>'week-hot'),
+            array('name'=>'月最热', 'id'=>'month-hot')
+        );
+        foreach ($articleHotTypes as $k => $v) {
+            for ($x=1; $x<=4; $x++) {
+                $articleHotTypes[$k]['articles'][$x]['title']=$x.$articleHotTypes[$k]['name'].'、SQL Server2008解除只能编辑前200行，选择1000行的限制';
+            }
+        }
+        $this->assign("articlehottypes",$articleHotTypes);
+        /** Demo End*/
+
 
         $thumbnailCondition['thumbnail'] = array('neq', '');
         $this->thumbnailList = M('Article')->where($thumbnailCondition)->order('updated_at DESC')->limit(6)->select();

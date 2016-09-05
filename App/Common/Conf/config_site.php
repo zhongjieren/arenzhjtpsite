@@ -27,7 +27,7 @@ return array (
 		'subSummaryLen' => '300',
 		'summaryHtmlTags' => '',
 		'autoLoginDuration' => '604800',
-		'theme' => 'eblog',
+//		'theme' => 'eblog',
 		'enable_lazyload_img' => '1',
 		'post_list_show_topic_icon' => '0',
 		'user_required_admin_verfiy' => '1',
