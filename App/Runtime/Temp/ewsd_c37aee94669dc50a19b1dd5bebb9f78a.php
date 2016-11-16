@@ -1,0 +1,3 @@
+<?php
+//000000000060a:20:{s:3:"cid";s:1:"5";s:3:"fid";s:1:"0";s:3:"oid";s:1:"5";s:4:"code";s:7:"opinion";s:3:"url";s:27:"/Article/index/code/opinion";s:5:"model";s:7:"article";s:8:"position";s:1:"2";s:6:"status";s:1:"1";s:4:"name";s:12:"码农视角";s:8:"keywords";N;s:11:"description";N;s:7:"summary";N;s:7:"content";N;s:4:"sort";s:1:"6";s:5:"isDel";s:1:"0";s:4:"cUid";N;s:5:"cTime";N;s:4:"uUid";N;s:5:"uTime";N;s:9:"cacheInfo";s:128:"<i class="fa fa-clock-o fw"></i> <em>耗时 1 毫秒</em> / <i class="fa fa-database fw"></i> <em>从 MySQL 数据库读取</em>";}
+?>

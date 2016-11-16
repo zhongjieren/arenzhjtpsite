@@ -3,82 +3,88 @@
     <head>
     <include file="Common:intoHead"/>
     <link rel="Stylesheet" type="text/css" href="{:C('STATIC_PATH')}Plugins/kindeditor/plugins/code/prettify.css" />
+    <!--Custom Style-->
+    <link rel="Stylesheet" type="text/css" href="__TMPL__Public/Css/style.css" />
+
     <script type="text/javascript"  src="{:C('STATIC_PATH')}Plugins/kindeditor/plugins/code/prettify.js"></script>
     <title>{$articleDetail.title}</title>
 </head>
 
 <body>
+<!-- 头部 -->
 <include file="Common:header" />
+<!-- /头部 -->
 
-<div class="container " style="margin-top:80px;">
+<!-- 主体 -->
+<div id="main-container" class="container" style="padding-top:70px">
+    <div class="col-md-3 col-sm-12">
+        <!--左侧文章作者信息 Start -->
+        <include file="Article:leftinfo" />
+        <!--左侧文章作者信息 End -->
+    </div>
 
-    <div class="row">
-        <div class="col-md-8">
-            {:W('Channel/linkMenu')}
-            
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <span class="badge pull-right">{$articleDetail.click}</span>
-                        <i class="fa fa-file-text"></i> {$articleDetail.title}
-                    </h4>
-                </div>
-                <div class="panel-body">
-                    <p>{$articleDetail.content}</p>
-                </div>
-                <div class="panel-footer">
-                    <em class="pull-right">{$articleDetail.cat_id|getChannelNameByCid}</em>
-                    <em>最后更新：{$articleDetail.uTime|timeFormat}</em>
-                </div>
+    <div class="col-md-9 col-sm-12">
+        <!-- Contents ================================================== -->
+        {:W('Channel/linkMenu')}
+
+        <section id="contents">
+            <div class="page-header">
+                <h1> {$articleDetail.title}</h1>
             </div>
-            <p></p>
-            <div>
-                {$front}
-                <div class="clearfix"></div>
-                <p></p>
-                {$after}
+            <div class="action">
+                <span>
+                    <a href="/Article/lists/category/jquery.html">
+                        <i class="fa fa-book"></i> jQuery框架
+                    </a>
+                </span>
+                <span><a href="/User/1.html"><i class="fa fa-user"></i> {$articleDetail.cat_id|getChannelNameByCid}</a></span>
+                <span><i class="fa fa-clock-o"></i> {$articleDetail.uTime|timeFormat}</span>
+                <span><i class="fa fa-eye"></i>{$articleDetail.click}次浏览</span>
             </div>
-            <p></p>
-            <div class="clearfix"></div>
-            <p></p>
-
-            <!-- UY BEGIN -->
-            <div id="uyan_frame"></div>
-            <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=1867659"></script>
-            <!-- UY END -->
-
-        </div>
-
-        <div class="col-md-4 col-sm-12">
-
-            <form class="form-group" action="{:U('Article/search')}">
-                <div class="form-group input-group">
-                    <input type="text" name="keyWords" class="form-control" placeholder="请输入标题/内容关键词" value="{$_GET['kw']}">
-                    <span class="input-group-btn">
-                        <button type="submit" class="btn btn-default submit"><i class="glyphicon glyphicon-search"></i>
-                        </button>
-                    </span>
-                </div>
-            </form>
-
-            <?php if(is_array($smallChannelList)){ ?>
-            <ul class="list-unstyled">
-                <volist name="smallChannelList" id="data">
-                    <li style="margin: 0 0 5px 0;"><a role="button" class="btn btn-lg btn-info btn-block" href="{$data.url}">{$data.name}</a></li>
-                </volist>
-            </ul>
-            <?php } ?>
-
-            <div class="panel panel-red">
-                <div class="panel-heading"><h4 class="panel-title"><i class="fa fa-fire"></i> 热门文章</h4></div>
-                <div class="list-group">
-                    <list model="Article" fields="id,cat_id,title" limit="10" order="click DESC">
-                        <a href="/article-{$id}.html" class="list-group-item">{$title}</a>
-                    </list>
-                </div>
+            <div class="panel-body">
+                <p>{$articleDetail.content}</p>
             </div>
 
-        </div>
+            <div style="padding-bottom: 10px;color: #999;">
+                <span><i class="fa fa-eye"></i>
+                    {$front}
+                </span>
+            </div>
+            <div style="padding-bottom: 10px;color: #999;">
+                <span><i class="fa fa-eye"></i>
+                    {$after}
+                </span>
+            </div>
+
+        </section>
+        <hr/>
+
+        <!-- Duoshuo Comment BEGIN -->
+        <div class="ds-thread" data-form-positon="top" data-limit="10" data-order="desc"></div>
+        <script type="text/javascript">
+            var duoshuoQuery = {
+                short_name: "xiace"
+            };
+            (function() {
+                var ds = document.createElement('script');
+                ds.type = 'text/javascript';ds.async = true;
+                ds.src = 'http://static.duoshuo.com/embed.js';
+                ds.charset = 'UTF-8';
+                (document.getElementsByTagName('head')[0]
+                || document.getElementsByTagName('body')[0]).appendChild(ds);
+            })();
+        </script>
+        <!-- Duoshuo Comment END -->
+
+        <!--<p></p>-->
+        <!--<div class="clearfix"></div>-->
+        <!--<p></p>-->
+
+        <!-- UY BEGIN -->
+        <!--<div id="uyan_frame"></div>-->
+        <!--<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=1867659"></script>-->
+        <!-- UY END -->
+    </div>
 
     </div>
 </div>
@@ -89,6 +95,11 @@
         jQuery(window).load(function(){
             prettyPrint();
         });
+    })
+    $(function () {
+        $(window).resize(function () {
+            $("#main-container").css("min-height", $(window).height() - 343);
+        }).resize();
     })
 </script>
 

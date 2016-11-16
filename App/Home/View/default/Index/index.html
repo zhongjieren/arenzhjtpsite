@@ -58,28 +58,40 @@
             </script>
 
             <p></p>
-
-            <ul id="myTab" class="nav nav-tabs">
-                <volist name="topCate" id="vo"  key='k'>
-                    <li <if condition="$k == 1">class="active"</if>  >
-                        <a href="#{$vo.cid}-cat"  data-toggle="tab"  >
-                            {$vo.name}
-                        </a>
-                    </li>
-                </volist>
-            </ul>
-            <div id="myTabContent" class="tab-content">
-                <volist name="topCate" id="vo"  key='k'>
-                        <div <if condition="$k == 1">class="tab-pane fade in active" <else/> class="tab-pane fade"</if>  id="{$vo['cid']}-cat">
-                            <div class="list-group">
-                                <volist name="vo.article" id="articleVo"  key='n'>
-                                    <a href="/article-{$articleVo.cid}-{$articleVo.id}.html" class="list-group-item"><span class="fa fa-th-list b-black"></span>  {$articleVo.title|cutStr="28"}</a>
-                                </volist>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <i class="fa fa-fire"></i>
+                        热门推荐
+                    </h4>
+                    <span class="pull-right" >
+                        <a class="btn btn-xs" href="/Article/lists/jquery.html">更多»</a>
+                    </span>
+                </div>
+                <div class="panel-body" style="padding:0px;">
+                    <ul id="myTab" class="nav nav-tabs">
+                        <volist name="topCate" id="vo"  key='k'>
+                            <li <if condition="$k == 1">class="active"</if>  >
+                            <a href="#{$vo.cid}-cat"  data-toggle="tab"  >
+                                {$vo.name}
+                            </a>
+                            </li>
+                        </volist>
+                    </ul>
+                    <div id="myTabContent" class="tab-content">
+                        <volist name="topCate" id="vo"  key='k'>
+                            <div <if condition="$k == 1">class="tab-pane fade in active" <else/> class="tab-pane fade"</if>  id="{$vo['cid']}-cat">
+                                <div class="list-group">
+                                    <volist name="vo.article" id="articleVo"  key='n'>
+                                        <!--<a href="/article-{$articleVo.cid}-{$articleVo.id}.html" class="list-group-item"><span class="fa fa-th-list b-black"></span>  {$articleVo.title|cutStr="28"}</a>-->
+                                        <a href="{:U('Home/Article/detail',array('cid'=>$articleVo['cid'],'id'=>$articleVo['id']))}" class="list-group-item"><span class="fa fa-th-list b-black"></span>  {$articleVo.title|cutStr="28"}</a>
+                                    </volist>
+                                </div>
                             </div>
-                        </div>
-                </volist>
+                        </volist>
+                    </div>
+                </div>
             </div>
-
             <p></p>
         </div>
 
@@ -99,7 +111,7 @@
                 <div class="panel-heading"><h4 class="panel-title"><i class="fa fa-fire"></i>热门推荐</h4></div>
                 <div class="list-group">
                     <list model="Article" fields="id,cid,title" limit="15" order="click DESC">
-                        <a href="/article-{$cid}-{$id}.html" class="list-group-item"><span class="fa fa-th-list b-black"></span> {$title}</a>
+                        <a href="/article-{$cid}-{$id}.html" class="list-group-item"><span class="fa fa-th-list b-black"></span> {$title|cutStr="28"}</a>
                     </list>
                 </div>
             </div>
@@ -108,7 +120,7 @@
                 <div class="panel-heading"><h4 class="panel-title"><i class="fa fa-fire"></i>热门主题</h4></div>
                 <div class="list-group">
                     <list model="Article" fields="id,cid,title" limit="15" order="click DESC">
-                        <a href="/article-{$cid}-{$id}.html" class="list-group-item"><span class="fa fa-flag b-black"></span> {$title}</a>
+                        <a href="/article-{$cid}-{$id}.html" class="list-group-item"><span class="fa fa-flag b-black"></span> {$title|cutStr="28"}</a>
                     </list>
                 </div>
             </div>

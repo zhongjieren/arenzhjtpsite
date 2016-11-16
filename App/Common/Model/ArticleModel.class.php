@@ -240,7 +240,9 @@ class ArticleModel extends CommonModel {
 
         $M = M('Article');
         $front = $M->where("id<" . $currentId)->order('id DESC')->limit('1')->find();
-        return $f = !$front ? '<a role="button" class="btn btn-lg btn-default col-sm-12 btn-block disabled" style="text-align:left;"><i class="fa fa-backward"></i> 这是最前一篇了</a>' : '<a role="button" class="btn btn-lg btn-default col-sm-12 btn-block" style="text-align:left;overflow:hidden;" href="/article-' . $front['id'] . '.html"><i class="fa fa-backward"></i> ' . $front['title'] . '</a>';
+//        return $f = !$front ? '<a role="button" class="btn btn-lg btn-default col-sm-12 btn-block disabled" style="text-align:left;"><i class="fa fa-backward"></i> 这是最前一篇了</a>' : '<a role="button" class="btn btn-lg btn-default col-sm-12 btn-block" style="text-align:left;overflow:hidden;" href="/article-' . $front['id'] . '.html"><i class="fa fa-backward"></i> ' . $front['title'] . '</a>';
+//        return $f = !$front ? '<a role="button" class="btn btn-lg btn-default col-sm-12 btn-block disabled" style="text-align:left;"><i class="fa fa-backward"></i> 这是最前一篇了</a>' : '<a role="button" class="btn btn-lg btn-default col-sm-12 btn-block" style="text-align:left;overflow:hidden;" href="'.U('Home/Article/detail',array('cid'=>$front['cid'],'id'=>$front['id'])) . '"><i class="fa fa-backward"></i> ' . $front['title'] . '</a>';
+        return $f = !$front ? '<a  class="disabled"  >这是最前一篇了</a>' : '<a   style="text-align:left;overflow:hidden;" href="'.U('Home/Article/detail',array('cid'=>$front['cid'],'id'=>$front['id'])) . '">' . $front['title'] . '</a>';
     }
 
     /**
@@ -252,7 +254,9 @@ class ArticleModel extends CommonModel {
 
         $M = M('Article');
         $after = $M->where("id>" . $currentId)->order('id ASC')->limit('1')->find();
-        return $a = !$after ? '<a role="button" class="btn btn-lg btn-default col-sm-12 btn-block disabled" style="text-align:left;"><i class="fa fa-forward"></i> 这是最后一篇了</a>' : '<a role="button" class="btn btn-lg btn-default col-sm-12 btn-block" style="text-align:left;overflow:hidden;" href="/article-' . $after['id'] . '.html"><i class="fa fa-forward"></i> ' . $after['title'] . '</a>';
+//        return $a = !$after ? '<a role="button" class="btn btn-lg btn-default col-sm-12 btn-block disabled" style="text-align:left;"><i class="fa fa-forward"></i> 这是最后一篇了</a>' : '<a role="button" class="btn btn-lg btn-default col-sm-12 btn-block" style="text-align:left;overflow:hidden;" href="/article-' . $after['id'] . '.html"><i class="fa fa-forward"></i> ' . $after['title'] . '</a>';
+//        return $a = !$after ? '<a role="button" class="btn btn-lg btn-default col-sm-12 btn-block disabled" style="text-align:left;"><i class="fa fa-forward"></i> 这是最后一篇了</a>' : '<a role="button" class="btn btn-lg btn-default col-sm-12 btn-block" style="text-align:left;overflow:hidden;" href="'.U('Home/Article/detail',array('cid'=>$after['cid'],'id'=>$after['id'])) . '"><i class="fa fa-forward"></i> ' . $after['title'] . '</a>';
+        return $a = !$after ? '<a  class="disabled" style="text-align:left;">这是最后一篇了</a>' : '<a  style="text-align:left;overflow:hidden;" href="'.U('Home/Article/detail',array('cid'=>$after['cid'],'id'=>$after['id'])) . '">' . $after['title'] . '</a>';
     }
 
     /**

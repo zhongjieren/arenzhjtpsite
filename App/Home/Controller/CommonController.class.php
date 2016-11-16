@@ -19,6 +19,8 @@ use Common\Model\ArticleModel;
 class CommonController extends Controller {
 
     function _initialize() {
+//        var_dump('111111');
+//        exit;
     	if(I('get.cid')) {
     		$cat_id = I('get.cid');
     	} else {
