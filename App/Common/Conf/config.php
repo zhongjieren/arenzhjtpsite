@@ -6,7 +6,7 @@ $sysConfig = array(
     'DB_HOST' => 'localhost',
     'DB_NAME' => 'cms_ewsd_cn',
     'DB_USER' => 'root',
-    'DB_PWD' => 'arenzhj',
+    'DB_PWD' => 'root',
     'DB_PORT' => '3306',
     'DB_PREFIX' => 'ec_',
 
