@@ -1,0 +1,370 @@
+[ 2016-11-24T15:26:59+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.023000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017000s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Model\ArticleModel.class.php 第 18 行.
+NOTIC: [2048] Non-static method Common\Model\ArticleModel::getCidById() should not be called statically, assuming $this from incompatible context D:\arenzhjwork\git\cms\arenzhjtpsite\App\Home\Controller\CommonController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `ec_article` [ RunTime:0.0260s ]
+SQL: SELECT `cid` FROM `ec_article` WHERE `id` = '' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ec_channel` [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `ec_channel` [ RunTime:0.0150s ]
+NOTIC: [8] Undefined index: modelType D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Model\BaseModel.class.php 第 188 行.
+NOTIC: [8] Undefined index: field D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Model\BaseModel.class.php 第 206 行.
+SQL: SELECT * FROM `ec_channel` WHERE `cid` = null LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\ChannelModel
+SQL: SHOW COLUMNS FROM `ec_channel` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `ec_article` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `ec_article` WHERE `thumbnail` <> '' ORDER BY updated_at DESC LIMIT 6   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: limit D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Model\BaseModel.class.php 第 49 行.
+SQL: SELECT * FROM `ec_channel` WHERE `fid` = 0 AND `model` = 'article' AND `status` = 1 ORDER BY sort ASC  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: limit D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Model\BaseModel.class.php 第 49 行.
+SQL: SELECT * FROM `ec_channel` WHERE `status` = 1 ORDER BY sort ASC  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ec_article` WHERE `cid` IN ('7','9','11','12','2') ORDER BY updated_at DESC LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ec_article` WHERE `cid` IN ('8','10','13','14','3') ORDER BY updated_at DESC LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ec_article` WHERE `cid` IN ('15','16','17','18','19','4') ORDER BY updated_at DESC LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ec_article` WHERE `cid` IN ('5') ORDER BY updated_at DESC LIMIT 5   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: condition D:\arenzhjwork\git\cms\arenzhjtpsite\ThinkPHP\Library\Think\Template\TagLib\Co.class.php 第 25 行.
+NOTIC: [8] Undefined variable: condition D:\arenzhjwork\git\cms\arenzhjtpsite\ThinkPHP\Library\Think\Template\TagLib\Co.class.php 第 33 行.
+NOTIC: [8] Undefined variable: condition D:\arenzhjwork\git\cms\arenzhjtpsite\ThinkPHP\Library\Think\Template\TagLib\Co.class.php 第 37 行.
+NOTIC: [8] Undefined index: condition D:\arenzhjwork\git\cms\arenzhjtpsite\ThinkPHP\Library\Think\Template\TagLib\Co.class.php 第 25 行.
+NOTIC: [8] Undefined variable: condition D:\arenzhjwork\git\cms\arenzhjtpsite\ThinkPHP\Library\Think\Template\TagLib\Co.class.php 第 33 行.
+NOTIC: [8] Undefined variable: condition D:\arenzhjwork\git\cms\arenzhjtpsite\ThinkPHP\Library\Think\Template\TagLib\Co.class.php 第 37 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: articleDetail D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 7 行.
+NOTIC: [8] Undefined variable: articleDetail D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 8 行.
+NOTIC: [8] Undefined index: limit D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Model\BaseModel.class.php 第 49 行.
+SQL: SELECT * FROM `ec_channel` WHERE `status` = 1 ORDER BY sort ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.077000s ]
+NOTIC: [8] Undefined offset: 0 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Home\1242af1d05ffad1db18cc3faaddc1588.php 第 3 行.
+NOTIC: [8] Undefined index: cid D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Home\1242af1d05ffad1db18cc3faaddc1588.php 第 13 行.
+NOTIC: [8] Use of undefined constant cid - assumed 'cid' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Home\1242af1d05ffad1db18cc3faaddc1588.php 第 13 行.
+NOTIC: [8] Undefined index: cid D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Home\1242af1d05ffad1db18cc3faaddc1588.php 第 13 行.
+NOTIC: [8] Undefined offset: 0 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Home\1242af1d05ffad1db18cc3faaddc1588.php 第 3 行.
+NOTIC: [8] Undefined index: cid D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Home\1242af1d05ffad1db18cc3faaddc1588.php 第 13 行.
+NOTIC: [8] Undefined offset: 0 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Home\1242af1d05ffad1db18cc3faaddc1588.php 第 3 行.
+NOTIC: [8] Undefined index: cid D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Home\1242af1d05ffad1db18cc3faaddc1588.php 第 13 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.019000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.019000s ]
+NOTIC: [8] Undefined offset: 14 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 15 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 16 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 17 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 18 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 19 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 20 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 21 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 22 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 23 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 24 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 25 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 26 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 27 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 14 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 15 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 16 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 17 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 18 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 19 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 20 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 21 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 22 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 23 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 24 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 25 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 26 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 27 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 12 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 13 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 14 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 15 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 16 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 17 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 18 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 19 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 20 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 21 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 22 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 23 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 24 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 25 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 26 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 27 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 12 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 13 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 14 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 15 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 16 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 17 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 18 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 19 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 20 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 21 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 22 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 23 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 24 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 25 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 26 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 27 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 15 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 16 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 17 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 18 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 19 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 20 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 21 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 22 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 23 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 24 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 25 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 26 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 27 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 15 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 16 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 17 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 18 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 19 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 20 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 21 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 22 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 23 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 24 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 25 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 26 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 27 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 12 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 13 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 14 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 15 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 16 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 17 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 18 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 19 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 20 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 21 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 22 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 23 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 24 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 25 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 26 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 27 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 12 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 13 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 14 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 15 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 16 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 17 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 18 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 19 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 20 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 21 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 22 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 23 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 24 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 25 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 26 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 27 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 17 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 18 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 19 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 20 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 21 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 22 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 23 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 24 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 25 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 26 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 27 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 17 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 18 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 19 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 20 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 21 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 22 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 23 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 24 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 25 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 26 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 27 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined index: kw D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 130 行.
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php on line 141 and defined D:\arenzhjwork\git\cms\arenzhjtpsite\ThinkPHP\Library\Think\Model.class.php 第 1771 行.
+NOTIC: [8] Undefined variable: where D:\arenzhjwork\git\cms\arenzhjtpsite\ThinkPHP\Library\Think\Model.class.php 第 1779 行.
+NOTIC: [8] Undefined variable: where D:\arenzhjwork\git\cms\arenzhjtpsite\ThinkPHP\Library\Think\Model.class.php 第 1782 行.
+NOTIC: [8] Undefined variable: where D:\arenzhjwork\git\cms\arenzhjtpsite\ThinkPHP\Library\Think\Model.class.php 第 1790 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ec_article` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php on line 141 and defined D:\arenzhjwork\git\cms\arenzhjtpsite\ThinkPHP\Library\Think\Model.class.php 第 1771 行.
+NOTIC: [8] Undefined variable: where D:\arenzhjwork\git\cms\arenzhjtpsite\ThinkPHP\Library\Think\Model.class.php 第 1779 行.
+NOTIC: [8] Undefined variable: where D:\arenzhjwork\git\cms\arenzhjtpsite\ThinkPHP\Library\Think\Model.class.php 第 1782 行.
+NOTIC: [8] Undefined variable: where D:\arenzhjwork\git\cms\arenzhjtpsite\ThinkPHP\Library\Think\Model.class.php 第 1790 行.
+SQL: SELECT `id`,`cid`,`title` FROM `ec_article` ORDER BY click DESC LIMIT 0,15   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 14 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 15 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 16 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 17 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 18 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 19 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 20 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 21 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 22 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 23 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 24 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 25 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 26 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 27 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 12 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 13 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 14 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 15 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 16 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 17 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 18 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 19 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 20 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 21 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 22 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 23 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 24 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 25 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 26 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 27 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 15 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 16 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 17 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 18 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 19 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 20 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 21 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 22 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 23 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 24 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 25 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 26 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 27 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 12 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 13 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 14 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 15 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 16 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 17 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 18 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 19 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 20 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 21 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 22 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 23 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 24 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 25 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 26 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 27 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 17 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 18 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 19 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 20 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 21 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 22 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 23 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 24 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 25 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 26 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 27 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php on line 148 and defined D:\arenzhjwork\git\cms\arenzhjtpsite\ThinkPHP\Library\Think\Model.class.php 第 1771 行.
+NOTIC: [8] Undefined variable: where D:\arenzhjwork\git\cms\arenzhjtpsite\ThinkPHP\Library\Think\Model.class.php 第 1779 行.
+NOTIC: [8] Undefined variable: where D:\arenzhjwork\git\cms\arenzhjtpsite\ThinkPHP\Library\Think\Model.class.php 第 1782 行.
+NOTIC: [8] Undefined variable: where D:\arenzhjwork\git\cms\arenzhjtpsite\ThinkPHP\Library\Think\Model.class.php 第 1790 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ec_article` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php on line 148 and defined D:\arenzhjwork\git\cms\arenzhjtpsite\ThinkPHP\Library\Think\Model.class.php 第 1771 行.
+NOTIC: [8] Undefined variable: where D:\arenzhjwork\git\cms\arenzhjtpsite\ThinkPHP\Library\Think\Model.class.php 第 1779 行.
+NOTIC: [8] Undefined variable: where D:\arenzhjwork\git\cms\arenzhjtpsite\ThinkPHP\Library\Think\Model.class.php 第 1782 行.
+NOTIC: [8] Undefined variable: where D:\arenzhjwork\git\cms\arenzhjtpsite\ThinkPHP\Library\Think\Model.class.php 第 1790 行.
+SQL: SELECT `id`,`cid`,`title` FROM `ec_article` ORDER BY click DESC LIMIT 0,15   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 14 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 15 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 16 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 17 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 18 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 19 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 20 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 21 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 22 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 23 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 24 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 25 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 26 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 27 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 12 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 13 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 14 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 15 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 16 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 17 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 18 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 19 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 20 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 21 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 22 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 23 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 24 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 25 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 26 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 27 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 15 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 16 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 17 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 18 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 19 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 20 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 21 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 22 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 23 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 24 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 25 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 26 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 27 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 12 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 13 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 14 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 15 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 16 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 17 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 18 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 19 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 20 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 21 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 22 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 23 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 24 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 25 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 26 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 27 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 17 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 18 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 19 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 20 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 21 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 22 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 23 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 24 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 25 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 26 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined offset: 27 D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Common\function.php 第 199 行.
+NOTIC: [8] Undefined variable: channelList D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 244 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.101000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.039000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.029000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.029000s ]
+

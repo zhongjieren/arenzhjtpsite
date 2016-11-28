@@ -1,0 +1,708 @@
+[ 2016-11-28T14:38:21+08:00 ] 127.0.0.1 /index.php/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-28T14:38:21+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Public&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-28T14:38:22+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Public&a=verify_code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-28T14:38:23+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Public&a=verify_code&rand=0.9812531291972846
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-28T14:38:27+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Public&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ec_user` [ RunTime:0.0110s ]
+NOTIC: [2] Missing argument 1 for Admin\Model\PublicModel::auth(), called in D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\PublicController.class.php on line 49 and defined D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Model\PublicModel.class.php 第 20 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ec_user` WHERE ( `username`='admin' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ec_user` WHERE ( `username`='admin' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: op_type D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Model\PublicModel.class.php 第 39 行.
+NOTIC: [8] Undefined index: status D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\PublicController.class.php 第 51 行.
+
+[ 2016-11-28T14:38:29+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Non-static method Common\Model\CommonModel::leftMenu() should not be called statically, assuming $this from incompatible context D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `ec_leftmenu` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`level`,`name` FROM `ec_leftmenu` WHERE `pid` = 0 AND `status` = 1 ORDER BY oid ASC  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ec_leftmenu` WHERE `status` = 1 AND `id` <> '2' AND `level` = 2 ORDER BY oid ASC  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ec_leftmenu` WHERE `status` = 1 AND `id` <> '10' AND `level` = 10 ORDER BY oid ASC  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ec_leftmenu` WHERE `status` = 1 AND `id` <> '12' AND `level` = 12 ORDER BY oid ASC  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ec_leftmenu` WHERE `status` = 1 AND `id` <> '3' AND `level` = 3 ORDER BY oid ASC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\220f72f7e6ae0a9673378392936f2785.php 第 284 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\220f72f7e6ae0a9673378392936f2785.php 第 284 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\220f72f7e6ae0a9673378392936f2785.php 第 284 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\220f72f7e6ae0a9673378392936f2785.php 第 284 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\220f72f7e6ae0a9673378392936f2785.php 第 284 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\220f72f7e6ae0a9673378392936f2785.php 第 284 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\220f72f7e6ae0a9673378392936f2785.php 第 284 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\220f72f7e6ae0a9673378392936f2785.php 第 284 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\220f72f7e6ae0a9673378392936f2785.php 第 284 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\220f72f7e6ae0a9673378392936f2785.php 第 284 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\220f72f7e6ae0a9673378392936f2785.php 第 284 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\220f72f7e6ae0a9673378392936f2785.php 第 284 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\220f72f7e6ae0a9673378392936f2785.php 第 284 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.098000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-28T14:38:30+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=lineChart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant tooltip - assumed 'tooltip' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 125 行.
+NOTIC: [8] Use of undefined constant trigger - assumed 'trigger' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 126 行.
+NOTIC: [8] Use of undefined constant legend - assumed 'legend' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 128 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 129 行.
+NOTIC: [8] Use of undefined constant toolbox - assumed 'toolbox' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 131 行.
+NOTIC: [8] Use of undefined constant show - assumed 'show' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 132 行.
+NOTIC: [8] Use of undefined constant feature - assumed 'feature' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 133 行.
+NOTIC: [8] Use of undefined constant mark - assumed 'mark' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 134 行.
+NOTIC: [8] Use of undefined constant show - assumed 'show' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 134 行.
+NOTIC: [8] Use of undefined constant dataView - assumed 'dataView' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 135 行.
+NOTIC: [8] Use of undefined constant show - assumed 'show' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 135 行.
+NOTIC: [8] Use of undefined constant readOnly - assumed 'readOnly' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 135 行.
+NOTIC: [8] Use of undefined constant magicType - assumed 'magicType' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 136 行.
+NOTIC: [8] Use of undefined constant show - assumed 'show' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 136 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 136 行.
+NOTIC: [8] Use of undefined constant restore - assumed 'restore' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant show - assumed 'show' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant saveAsImage - assumed 'saveAsImage' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 138 行.
+NOTIC: [8] Use of undefined constant show - assumed 'show' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 138 行.
+NOTIC: [8] Use of undefined constant calculable - assumed 'calculable' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 141 行.
+NOTIC: [8] Use of undefined constant xAxis - assumed 'xAxis' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 142 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 144 行.
+NOTIC: [8] Use of undefined constant boundaryGap - assumed 'boundaryGap' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 145 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 146 行.
+NOTIC: [8] Use of undefined constant yAxis - assumed 'yAxis' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 149 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 151 行.
+NOTIC: [8] Use of undefined constant axisLabel - assumed 'axisLabel' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 152 行.
+NOTIC: [8] Use of undefined constant formatter - assumed 'formatter' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 153 行.
+NOTIC: [8] Use of undefined constant series - assumed 'series' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 157 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 159 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 160 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 161 行.
+NOTIC: [8] Use of undefined constant markPoint - assumed 'markPoint' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 162 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 163 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 164 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 164 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 165 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 165 行.
+NOTIC: [8] Use of undefined constant markLine - assumed 'markLine' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 168 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 169 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 170 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 170 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 176 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant markPoint - assumed 'markPoint' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 178 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 180 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 180 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 181 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 181 行.
+NOTIC: [8] Use of undefined constant markLine - assumed 'markLine' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 186 行.
+
+[ 2016-11-28T14:38:31+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=barChart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant tooltip - assumed 'tooltip' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 72 行.
+NOTIC: [8] Use of undefined constant trigger - assumed 'trigger' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 73 行.
+NOTIC: [8] Use of undefined constant legend - assumed 'legend' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 75 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 76 行.
+NOTIC: [8] Use of undefined constant toolbox - assumed 'toolbox' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 78 行.
+NOTIC: [8] Use of undefined constant show - assumed 'show' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 79 行.
+NOTIC: [8] Use of undefined constant feature - assumed 'feature' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 80 行.
+NOTIC: [8] Use of undefined constant mark - assumed 'mark' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant show - assumed 'show' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant dataView - assumed 'dataView' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 82 行.
+NOTIC: [8] Use of undefined constant show - assumed 'show' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 82 行.
+NOTIC: [8] Use of undefined constant readOnly - assumed 'readOnly' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 82 行.
+NOTIC: [8] Use of undefined constant magicType - assumed 'magicType' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 83 行.
+NOTIC: [8] Use of undefined constant show - assumed 'show' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 83 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 83 行.
+NOTIC: [8] Use of undefined constant restore - assumed 'restore' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 84 行.
+NOTIC: [8] Use of undefined constant show - assumed 'show' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 84 行.
+NOTIC: [8] Use of undefined constant saveAsImage - assumed 'saveAsImage' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 85 行.
+NOTIC: [8] Use of undefined constant show - assumed 'show' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 85 行.
+NOTIC: [8] Use of undefined constant calculable - assumed 'calculable' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant xAxis - assumed 'xAxis' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 89 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 91 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 92 行.
+NOTIC: [8] Use of undefined constant yAxis - assumed 'yAxis' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 95 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 97 行.
+NOTIC: [8] Use of undefined constant series - assumed 'series' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 100 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 102 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 104 行.
+NOTIC: [8] Use of undefined constant markPoint - assumed 'markPoint' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 105 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 106 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 107 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 107 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 108 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 108 行.
+NOTIC: [8] Use of undefined constant markLine - assumed 'markLine' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 111 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 112 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 113 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 113 行.
+
+[ 2016-11-28T14:38:33+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Channel&a=index&_=1480315112276
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ec_channel` [ RunTime:0.0120s ]
+NOTIC: [2] Missing argument 3 for Com\Category::__construct(), called in D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Model\ChannelModel.class.php on line 83 and defined D:\arenzhjwork\git\cms\arenzhjtpsite\ThinkPHP\Library\Com\Category.class.php 第 33 行.
+NOTIC: [2] Missing argument 4 for Com\Category::__construct(), called in D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Model\ChannelModel.class.php on line 83 and defined D:\arenzhjwork\git\cms\arenzhjtpsite\ThinkPHP\Library\Com\Category.class.php 第 33 行.
+NOTIC: [8] Undefined variable: connection D:\arenzhjwork\git\cms\arenzhjtpsite\ThinkPHP\Library\Com\Category.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `ec_channel` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `ec_channel` ORDER BY sort asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: Think D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 2 行.
+NOTIC: [8] Undefined variable: Think D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 38 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 82 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 83 行.
+NOTIC: [8] Use of undefined constant product - assumed 'product' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 84 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 85 行.
+NOTIC: [8] Use of undefined constant link - assumed 'link' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 86 行.
+NOTIC: [8] Use of undefined constant cid - assumed 'cid' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 90 行.
+NOTIC: [8] Undefined variable: Think D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 38 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 82 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 83 行.
+NOTIC: [8] Use of undefined constant product - assumed 'product' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 84 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 85 行.
+NOTIC: [8] Use of undefined constant link - assumed 'link' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 86 行.
+NOTIC: [8] Use of undefined constant cid - assumed 'cid' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 90 行.
+NOTIC: [8] Undefined variable: Think D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 38 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 82 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 83 行.
+NOTIC: [8] Use of undefined constant product - assumed 'product' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 84 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 85 行.
+NOTIC: [8] Use of undefined constant link - assumed 'link' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 86 行.
+NOTIC: [8] Use of undefined constant cid - assumed 'cid' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 90 行.
+NOTIC: [8] Undefined variable: Think D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 38 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 82 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 83 行.
+NOTIC: [8] Use of undefined constant product - assumed 'product' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 84 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 85 行.
+NOTIC: [8] Use of undefined constant link - assumed 'link' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 86 行.
+NOTIC: [8] Use of undefined constant cid - assumed 'cid' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 90 行.
+NOTIC: [8] Undefined variable: Think D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 38 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 82 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 83 行.
+NOTIC: [8] Use of undefined constant product - assumed 'product' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 84 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 85 行.
+NOTIC: [8] Use of undefined constant link - assumed 'link' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 86 行.
+NOTIC: [8] Use of undefined constant cid - assumed 'cid' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 90 行.
+NOTIC: [8] Undefined variable: Think D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 38 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 82 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 83 行.
+NOTIC: [8] Use of undefined constant product - assumed 'product' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 84 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 85 行.
+NOTIC: [8] Use of undefined constant link - assumed 'link' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 86 行.
+NOTIC: [8] Use of undefined constant cid - assumed 'cid' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 90 行.
+NOTIC: [8] Undefined variable: Think D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 38 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 82 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 83 行.
+NOTIC: [8] Use of undefined constant product - assumed 'product' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 84 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 85 行.
+NOTIC: [8] Use of undefined constant link - assumed 'link' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 86 行.
+NOTIC: [8] Use of undefined constant cid - assumed 'cid' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 90 行.
+NOTIC: [8] Undefined variable: Think D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 38 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 82 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 83 行.
+NOTIC: [8] Use of undefined constant product - assumed 'product' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 84 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 85 行.
+NOTIC: [8] Use of undefined constant link - assumed 'link' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 86 行.
+NOTIC: [8] Use of undefined constant cid - assumed 'cid' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 90 行.
+NOTIC: [8] Undefined variable: Think D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 38 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 82 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 83 行.
+NOTIC: [8] Use of undefined constant product - assumed 'product' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 84 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 85 行.
+NOTIC: [8] Use of undefined constant link - assumed 'link' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 86 行.
+NOTIC: [8] Use of undefined constant cid - assumed 'cid' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 90 行.
+NOTIC: [8] Undefined variable: Think D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 38 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 82 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 83 行.
+NOTIC: [8] Use of undefined constant product - assumed 'product' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 84 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 85 行.
+NOTIC: [8] Use of undefined constant link - assumed 'link' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 86 行.
+NOTIC: [8] Use of undefined constant cid - assumed 'cid' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 90 行.
+NOTIC: [8] Undefined variable: Think D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 38 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 82 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 83 行.
+NOTIC: [8] Use of undefined constant product - assumed 'product' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 84 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 85 行.
+NOTIC: [8] Use of undefined constant link - assumed 'link' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 86 行.
+NOTIC: [8] Use of undefined constant cid - assumed 'cid' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 90 行.
+NOTIC: [8] Undefined variable: Think D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 38 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 82 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 83 行.
+NOTIC: [8] Use of undefined constant product - assumed 'product' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 84 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 85 行.
+NOTIC: [8] Use of undefined constant link - assumed 'link' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 86 行.
+NOTIC: [8] Use of undefined constant cid - assumed 'cid' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 90 行.
+NOTIC: [8] Undefined variable: Think D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 38 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 82 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 83 行.
+NOTIC: [8] Use of undefined constant product - assumed 'product' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 84 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 85 行.
+NOTIC: [8] Use of undefined constant link - assumed 'link' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 86 行.
+NOTIC: [8] Use of undefined constant cid - assumed 'cid' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 90 行.
+NOTIC: [8] Undefined variable: Think D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 38 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 82 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 83 行.
+NOTIC: [8] Use of undefined constant product - assumed 'product' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 84 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 85 行.
+NOTIC: [8] Use of undefined constant link - assumed 'link' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 86 行.
+NOTIC: [8] Use of undefined constant cid - assumed 'cid' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 90 行.
+NOTIC: [8] Undefined variable: Think D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 38 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 82 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 83 行.
+NOTIC: [8] Use of undefined constant product - assumed 'product' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 84 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 85 行.
+NOTIC: [8] Use of undefined constant link - assumed 'link' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 86 行.
+NOTIC: [8] Use of undefined constant cid - assumed 'cid' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 90 行.
+NOTIC: [8] Undefined variable: Think D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 38 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 82 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 83 行.
+NOTIC: [8] Use of undefined constant product - assumed 'product' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 84 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 85 行.
+NOTIC: [8] Use of undefined constant link - assumed 'link' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 86 行.
+NOTIC: [8] Use of undefined constant cid - assumed 'cid' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 90 行.
+NOTIC: [8] Undefined variable: Think D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 38 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 82 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 83 行.
+NOTIC: [8] Use of undefined constant product - assumed 'product' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 84 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 85 行.
+NOTIC: [8] Use of undefined constant link - assumed 'link' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 86 行.
+NOTIC: [8] Use of undefined constant cid - assumed 'cid' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 90 行.
+NOTIC: [8] Undefined variable: Think D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 38 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 82 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 83 行.
+NOTIC: [8] Use of undefined constant product - assumed 'product' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 84 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 85 行.
+NOTIC: [8] Use of undefined constant link - assumed 'link' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 86 行.
+NOTIC: [8] Use of undefined constant cid - assumed 'cid' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 90 行.
+NOTIC: [8] Undefined variable: Think D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 38 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 82 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 83 行.
+NOTIC: [8] Use of undefined constant product - assumed 'product' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 84 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 85 行.
+NOTIC: [8] Use of undefined constant link - assumed 'link' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 86 行.
+NOTIC: [8] Use of undefined constant cid - assumed 'cid' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 90 行.
+NOTIC: [8] Undefined index: pageSize D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 103 行.
+NOTIC: [8] Undefined index: pageSize D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 104 行.
+NOTIC: [8] Undefined index: pageSize D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 105 行.
+NOTIC: [8] Undefined index: pageSize D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 106 行.
+NOTIC: [8] Undefined index: pageSize D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 107 行.
+NOTIC: [8] Undefined variable: total D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 110 行.
+NOTIC: [8] Undefined variable: total D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\32f35546ccb40565da97692ddffe0907.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-28T16:22:12+08:00 ] 127.0.0.1 /index.php?m=Admin&c=User&a=index&_=1480321332830
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-28T16:22:14+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Access&a=nodeList&_=1480321334378
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-28T16:22:14+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Public&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-28T16:22:14+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Public&a=verify_code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-28T16:22:18+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-28T16:22:18+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Public&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-28T16:22:18+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Public&a=verify_code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-28T16:22:19+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Public&a=verify_code&rand=0.5499963811598718
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-28T16:22:24+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Public&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ec_user` [ RunTime:0.0150s ]
+NOTIC: [2] Missing argument 1 for Admin\Model\PublicModel::auth(), called in D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\PublicController.class.php on line 49 and defined D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Model\PublicModel.class.php 第 20 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ec_user` WHERE ( `username`='admin' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ec_user` WHERE ( `username`='admin' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: op_type D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Model\PublicModel.class.php 第 39 行.
+NOTIC: [8] Undefined index: status D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\PublicController.class.php 第 51 行.
+
+[ 2016-11-28T16:22:26+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Non-static method Common\Model\CommonModel::leftMenu() should not be called statically, assuming $this from incompatible context D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `ec_leftmenu` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`level`,`name` FROM `ec_leftmenu` WHERE `pid` = 0 AND `status` = 1 ORDER BY oid ASC  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ec_leftmenu` WHERE `status` = 1 AND `id` <> '2' AND `level` = 2 ORDER BY oid ASC  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ec_leftmenu` WHERE `status` = 1 AND `id` <> '10' AND `level` = 10 ORDER BY oid ASC  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ec_leftmenu` WHERE `status` = 1 AND `id` <> '12' AND `level` = 12 ORDER BY oid ASC  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ec_leftmenu` WHERE `status` = 1 AND `id` <> '3' AND `level` = 3 ORDER BY oid ASC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\220f72f7e6ae0a9673378392936f2785.php 第 284 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\220f72f7e6ae0a9673378392936f2785.php 第 284 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\220f72f7e6ae0a9673378392936f2785.php 第 284 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\220f72f7e6ae0a9673378392936f2785.php 第 284 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\220f72f7e6ae0a9673378392936f2785.php 第 284 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\220f72f7e6ae0a9673378392936f2785.php 第 284 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\220f72f7e6ae0a9673378392936f2785.php 第 284 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\220f72f7e6ae0a9673378392936f2785.php 第 284 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\220f72f7e6ae0a9673378392936f2785.php 第 284 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\220f72f7e6ae0a9673378392936f2785.php 第 284 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\220f72f7e6ae0a9673378392936f2785.php 第 284 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\220f72f7e6ae0a9673378392936f2785.php 第 284 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\220f72f7e6ae0a9673378392936f2785.php 第 284 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-28T16:22:27+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=lineChart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant tooltip - assumed 'tooltip' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 125 行.
+NOTIC: [8] Use of undefined constant trigger - assumed 'trigger' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 126 行.
+NOTIC: [8] Use of undefined constant legend - assumed 'legend' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 128 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 129 行.
+NOTIC: [8] Use of undefined constant toolbox - assumed 'toolbox' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 131 行.
+NOTIC: [8] Use of undefined constant show - assumed 'show' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 132 行.
+NOTIC: [8] Use of undefined constant feature - assumed 'feature' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 133 行.
+NOTIC: [8] Use of undefined constant mark - assumed 'mark' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 134 行.
+NOTIC: [8] Use of undefined constant show - assumed 'show' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 134 行.
+NOTIC: [8] Use of undefined constant dataView - assumed 'dataView' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 135 行.
+NOTIC: [8] Use of undefined constant show - assumed 'show' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 135 行.
+NOTIC: [8] Use of undefined constant readOnly - assumed 'readOnly' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 135 行.
+NOTIC: [8] Use of undefined constant magicType - assumed 'magicType' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 136 行.
+NOTIC: [8] Use of undefined constant show - assumed 'show' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 136 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 136 行.
+NOTIC: [8] Use of undefined constant restore - assumed 'restore' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant show - assumed 'show' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant saveAsImage - assumed 'saveAsImage' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 138 行.
+NOTIC: [8] Use of undefined constant show - assumed 'show' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 138 行.
+NOTIC: [8] Use of undefined constant calculable - assumed 'calculable' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 141 行.
+NOTIC: [8] Use of undefined constant xAxis - assumed 'xAxis' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 142 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 144 行.
+NOTIC: [8] Use of undefined constant boundaryGap - assumed 'boundaryGap' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 145 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 146 行.
+NOTIC: [8] Use of undefined constant yAxis - assumed 'yAxis' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 149 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 151 行.
+NOTIC: [8] Use of undefined constant axisLabel - assumed 'axisLabel' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 152 行.
+NOTIC: [8] Use of undefined constant formatter - assumed 'formatter' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 153 行.
+NOTIC: [8] Use of undefined constant series - assumed 'series' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 157 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 159 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 160 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 161 行.
+NOTIC: [8] Use of undefined constant markPoint - assumed 'markPoint' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 162 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 163 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 164 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 164 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 165 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 165 行.
+NOTIC: [8] Use of undefined constant markLine - assumed 'markLine' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 168 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 169 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 170 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 170 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 176 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant markPoint - assumed 'markPoint' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 178 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 180 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 180 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 181 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 181 行.
+NOTIC: [8] Use of undefined constant markLine - assumed 'markLine' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 186 行.
+
+[ 2016-11-28T16:22:28+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=barChart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant tooltip - assumed 'tooltip' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 72 行.
+NOTIC: [8] Use of undefined constant trigger - assumed 'trigger' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 73 行.
+NOTIC: [8] Use of undefined constant legend - assumed 'legend' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 75 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 76 行.
+NOTIC: [8] Use of undefined constant toolbox - assumed 'toolbox' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 78 行.
+NOTIC: [8] Use of undefined constant show - assumed 'show' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 79 行.
+NOTIC: [8] Use of undefined constant feature - assumed 'feature' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 80 行.
+NOTIC: [8] Use of undefined constant mark - assumed 'mark' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant show - assumed 'show' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant dataView - assumed 'dataView' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 82 行.
+NOTIC: [8] Use of undefined constant show - assumed 'show' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 82 行.
+NOTIC: [8] Use of undefined constant readOnly - assumed 'readOnly' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 82 行.
+NOTIC: [8] Use of undefined constant magicType - assumed 'magicType' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 83 行.
+NOTIC: [8] Use of undefined constant show - assumed 'show' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 83 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 83 行.
+NOTIC: [8] Use of undefined constant restore - assumed 'restore' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 84 行.
+NOTIC: [8] Use of undefined constant show - assumed 'show' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 84 行.
+NOTIC: [8] Use of undefined constant saveAsImage - assumed 'saveAsImage' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 85 行.
+NOTIC: [8] Use of undefined constant show - assumed 'show' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 85 行.
+NOTIC: [8] Use of undefined constant calculable - assumed 'calculable' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant xAxis - assumed 'xAxis' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 89 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 91 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 92 行.
+NOTIC: [8] Use of undefined constant yAxis - assumed 'yAxis' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 95 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 97 行.
+NOTIC: [8] Use of undefined constant series - assumed 'series' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 100 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 102 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 104 行.
+NOTIC: [8] Use of undefined constant markPoint - assumed 'markPoint' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 105 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 106 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 107 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 107 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 108 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 108 行.
+NOTIC: [8] Use of undefined constant markLine - assumed 'markLine' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 111 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 112 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 113 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Controller\IndexController.class.php 第 113 行.
+
+[ 2016-11-28T16:22:31+08:00 ] 127.0.0.1 /index.php?m=Admin&c=User&a=index&_=1480321350561
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ec_user` [ RunTime:0.0180s ]
+NOTIC: [8] Undefined index: search D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Controller\CommonController.class.php 第 49 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Controller\CommonController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: condition D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Controller\CommonController.class.php 第 62 行.
+NOTIC: [8] Undefined index: orderField D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Model\BaseModel.class.php 第 66 行.
+NOTIC: [8] Undefined index: pageCurrent D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Model\BaseModel.class.php 第 73 行.
+NOTIC: [8] Undefined index: pageSize D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Model\BaseModel.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `ec_user` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: modelType D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Model\BaseModel.class.php 第 88 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ec_user` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: modelType D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Model\BaseModel.class.php 第 95 行.
+NOTIC: [8] Undefined index: pageCurrent D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Model\BaseModel.class.php 第 99 行.
+SQL: SELECT * FROM `ec_user` ORDER BY uid ASC LIMIT 0,20   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 2 for Common\Model\CommonModel::getUserFullNameByUid(), called in D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Model\UserModel.class.php on line 59 and defined D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Model\CommonModel.class.php 第 107 行.
+NOTIC: [8] Undefined index: modelType D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Model\BaseModel.class.php 第 188 行.
+SQL: SELECT `uid`,`name` FROM `ec_user` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: UserOrg D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Model\UserModel.class.php 第 61 行.
+NOTIC: [8] Undefined index: UserOrg D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Model\UserModel.class.php 第 62 行.
+NOTIC: [8] Undefined index: UserOrg D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Model\UserModel.class.php 第 63 行.
+NOTIC: [8] Undefined index: UserOrg D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Model\UserModel.class.php 第 64 行.
+NOTIC: [8] Undefined index: search D:\arenzhjwork\git\cms\arenzhjtpsite\App\Common\Controller\CommonController.class.php 第 49 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: Think D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\0a04adf40c89abd7cb0e03cd3a9f8b2d.php 第 2 行.
+NOTIC: [8] Undefined index: aid D:\arenzhjwork\git\cms\arenzhjtpsite\App\Runtime\Cache\Admin\0a04adf40c89abd7cb0e03cd3a9f8b2d.php 第 30 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-28T16:22:33+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Access&a=nodeList&_=1480321352730
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ec_access` [ RunTime:0.0060s ]
+NOTIC: [2] Missing argument 3 for Com\Category::__construct(), called in D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Model\AccessModel.class.php on line 33 and defined D:\arenzhjwork\git\cms\arenzhjtpsite\ThinkPHP\Library\Com\Category.class.php 第 33 行.
+NOTIC: [2] Missing argument 4 for Com\Category::__construct(), called in D:\arenzhjwork\git\cms\arenzhjtpsite\App\Admin\Model\AccessModel.class.php on line 33 and defined D:\arenzhjwork\git\cms\arenzhjtpsite\ThinkPHP\Library\Com\Category.class.php 第 33 行.
+NOTIC: [8] Undefined variable: connection D:\arenzhjwork\git\cms\arenzhjtpsite\ThinkPHP\Library\Com\Category.class.php 第 35 行.
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cms_ewsd_cn.ec_auth_rule' doesn't exist
+
+[ 2016-11-28T16:22:38+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Access&a=roleList&_=1480321357099
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ec_access` [ RunTime:0.0140s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cms_ewsd_cn.ec_auth_group' doesn't exist
+

@@ -15,7 +15,7 @@ use Think\Controller;
 use Common\Controller\CommonController;
 
 class AccessController extends CommonController {
-
+	
     /**
       +----------------------------------------------------------
      * 管理员列表
